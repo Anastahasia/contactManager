@@ -1,3 +1,26 @@
 h6{
     display: none;
 }
+
+body{
+    padding: 7%;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(0, 9, 139);
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+
+input{
+    border-style: none; 
+    /* border: solid rgb(0, 9, 139) 1px;
+    border-radius: 2%; */
+}
+
+#insert{
+    margin: 2%;
+    text-align: center;
+}

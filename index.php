@@ -31,7 +31,7 @@
                 foreach($contacts as $contact) { //récupère chaque données ligne par ligne
                     echo
                         '<tr><form action="classEtFonctions/fonctionModification.php" method="POST">
-                            <td><input type="hidden" name="id" id="idcontact" value="'.$contact['idcontact'].'"/>'; //permet de récuperer l'id sans avoir à l'entrer manuellement dans la fonction
+                            <input type="hidden" name="id" id="idcontact" value="'.$contact['idcontact'].'"/>'; //permet de récuperer l'id sans avoir à l'entrer manuellement dans la fonction
                     echo    '<td><input type="text" name="nom" id="nom" value="'.$contact['nom'] . '"></td>
                             <td><input type="text" name="prenom" id="prenom" value="'.$contact['prenom'] . '"></td>
                             <td><input type="text" name="num" id="num" value="'.$contact['num'] . '"></td>
@@ -63,7 +63,7 @@
                                             <p>Êtes-vous sûr de vouloir supprimer ' . $contact['prenom']. ' ' . $contact['nom'] . '</p>
                                         </div>
                                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                                             <button type="submit" name="suppression" class="btn btn-outline-info">Valider</button>
                                         </div>
                                     </div>
@@ -77,9 +77,12 @@
     </table>
 
     <!-- bouton d'appel du modal d'insertion -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInsertion"> 
-        Ajouter un nouveau contact 
-    </button>  
+    <div  id="insert">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInsertion"> 
+        Nouveau contact 
+        </button>  
+    </div>
+
         <!-- Modal d'insertion -->
     <form action="classEtFonctions/fonctionInsertion.php" method="POST">
         <div class="modal fade" id="modalInsertion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -105,18 +108,18 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="tel" class="form-label">Numéro de téléphone</label>
-                                        <textarea class="form-control" id="tel" rows="2" name="num" required></textarea>
+                                        <input class="form-control" id="tel" type="text" name="num"></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <textarea class="form-control" id="email" rows="2" name="mail" required></textarea>
+                                        <input class="form-control" id="email" type="email" name="mail" >
                                     </div>
                                     <div class="mb-3">
                                         <label for="lAdresse" class="form-label">Adresse</label>
-                                        <textarea class="form-control" id="lAdresse" rows="2" name="adresse" required></textarea>
+                                        <textarea class="form-control" id="lAdresse" rows="2" name="adresse" ></textarea>
                                     </div>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button type="submit" class="btn btn-outline-info">Envoyer</button>
+                                        <button type="submit" class="btn btn-outline-info">Créer</button>
                                     </div>
                                 </div>
                             </div>
