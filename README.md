@@ -30,7 +30,7 @@ Pour cette application, il y a un dossier principal, un fichier index.php et deu
 Nous avons choisi d'intégrer en faisant appelle à des composants Bootstrap, car le temps est limité. Ils viennent avec le style déjà fait. Cela nous a permis de nous concentrer sur les fonctionnalités tout en garantissant un minimum d'ergonomie.
 
 L'interface de l'application est simpliste afin de faciliter son utilisation. 
-Nous avons créé un tableau qui regroupent les données sous forme d'inputs. Ainsi nous facilitons la lecture et la modification pour l'utilisateur. Les boutons sont bien visibles pour une question d'accessibilité. De plus, l'utilisateur comprend bien que chaque bouton correspond une ligne ce qui permet une fois de plus de faciliter l'utilisation. 
+Nous avons créé un tableau qui regroupent les données sous forme d'inputs. Ainsi nous facilitons la lecture et la modification pour l'utilisateur. Les boutons sont bien visibles pour une question d'accessibilité. De plus, l'utilisateur comprend bien que chaque bouton correspond à une ligne ce qui permet une fois de plus de faciliter l'utilisation. 
 
 
 ## Installation

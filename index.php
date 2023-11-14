@@ -37,7 +37,7 @@
                             <td><input type="text" name="num" id="num" value="'.$contact['num'] . '"></td>
                             <td><input type="text" name="mail" id="mail" value="'.$contact['mail'] . '"></td>
                             <td><input type="text" name="adresse" id="adresse" value="'.$contact['adresse'] . '"></td>
-                            <td><button type="submit" name="modification" class="btn btn-primary" >
+                            <td class="boutons"><button type="submit" name="modification" class="btn btn-primary" >
                                     Modifier
                                 </button>
                                 <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#suppression' . $contact['idcontact'] . '"> 

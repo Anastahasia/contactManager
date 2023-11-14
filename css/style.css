@@ -24,3 +24,7 @@ input{
     margin: 2%;
     text-align: center;
 }
+.boutons{
+    display: flex;
+    gap: 2%;
+}
